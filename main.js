@@ -23,10 +23,12 @@ var oggetti_studenti = [
 // Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 console.log(oggetti_studenti[0] , oggetti_studenti[1]);
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-var credenziali = [];
-for(i = 0; i < 3; i++){
-   credenziali = prompt("inserisci credenziali");
-}
 
-let nuovi_studenti = studente.push(credenziali);
-console.log(nuovi_studenti);
+
+   credenziali1 = prompt("inserisci nome");
+   credenziali2 = prompt("inserisci cognome");
+   credenziali3 = prompt("inserisci età");
+
+
+oggetti_studenti.push(credenziali1,credenziali2,credenziali3)
+console.log(oggetti_studenti);
